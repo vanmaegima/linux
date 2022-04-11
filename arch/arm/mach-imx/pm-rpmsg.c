@@ -12,7 +12,7 @@
  * GNU General Public License for more details.
  *
  */
-
+#define DEBUG
 #include <linux/err.h>
 #include <linux/slab.h>
 #include <linux/imx_rpmsg.h>
