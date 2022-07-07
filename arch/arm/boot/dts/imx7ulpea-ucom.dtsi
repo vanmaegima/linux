@@ -271,17 +271,6 @@
 	status = "okay";
 };
 
-&rpmsg{
-	/*
-	 * 64K for one rpmsg instance, default using 2 rpmsg instances:
-	 * --0x9DF00000~0x9DF0FFFF: pmic,pm,audio,keys,gpio,sensor
-	 * --0x9DF10000~0x9DF1FFFF: pingpong,virtual tty
-	 */
-	vdev-nums = <2>;
-	reg = <0x9DF00000 0x20000>;
-	status = "okay";
-};
-
 /* eMMC */
 &usdhc0 {
 	assigned-clocks = <&scg1 IMX7ULP_CLK_APLL_PFD1>, <&pcc2 IMX7ULP_CLK_USDHC0>;
